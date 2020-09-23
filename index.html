@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Code Quiz Challenge!</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <h1 class="title">Code Quiz Challenge!</h1>
+            </div>
+            <div class="col-sm-4">
+                <button class="timeleft">Time Left: <span id="time">90</span></button>
+                <button class="scores"><a href="Highscores.html">View Highscores</a></button>
+            </div>
+        </div>
+        <br>
+
+        <div class="jumbotron">
+
+            <br>
+
+            <div id="startScreen" class="card text-white bg-dark mb-3 width:30em">
+                <div class="card-body">
+                    <h3>Here you will be given a series of code based, multiple choice questions ranging between HTML,
+                        CSS, and Javascript.
+                        For each correct answer you give, you will be rewarded points, however, time will be deducted
+                        from you if you give an incorrect answer.
+                        Good Luck!
+                    </h3>
+                </div>
+                <button id="startbutton" class="btn btn-info">Start!</button>
+
+            </div>
+
+            <div class="card hide" id="questionsDiv">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card-header" id="question">
+                            <h3>Question</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body" id="answers">
+                    <div class="row">
+
+                        <button class="col-sm-6 answer btn btn-info" id="choice1" 
+                                onclick="checkAnswer('1')">Choice1</button>
+
+                        <button class="col-sm-6 answer btn btn-info" id="choice2" 
+                                onclick="checkAnswer('2')">Choice2</button>
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+
+                        <button class="col-sm-6 answer btn btn-info" id="choice3" 
+                                onclick="checkAnswer('3')">Choice3</button>
+
+                        <button class="col-sm-6 answer btn btn-info" id="choice4" 
+                                onclick="checkAnswer('4')">Choice4</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card hide" id="scoresDiv">
+                <div class="card-body">
+                    <br>
+                    <h3>Congrats!</h3>
+                    <p id="score"></p>
+                    <form class="subBtn" action="highscores.html">
+                        <p>Enter your initials to land on our Scoreboard!</p>
+                        <input type="text" name="initials" id="initials"></input>
+                        <button type="submit" id="subScore">Submit</button>
+                    </form>
+                    <br>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="logic.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+

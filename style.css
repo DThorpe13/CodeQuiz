@@ -1,0 +1,59 @@
+.hide {
+    display: none;
+}
+
+.title {
+    text-align: left;
+    font-size: 150%;
+}
+
+body {
+    background-color: lightgray;
+}
+
+h2 {
+    color: blanchedalmond;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.card-header {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.card-body {
+    background-color: black;
+    color: white;
+}
+
+p {
+    text-align: center;
+    font-size: 150%;
+
+}
+.subBtn {
+    text-align: center;
+}
+
+.jumbotron {
+    background-color: black;
+    background-size: cover;
+  }
+
+
+
+h3 {
+    text-align: center;
+}
+
+var {
+    color: black
+}
+
+
+body {
+    height: 100%;
+    width: 100%;
+}
