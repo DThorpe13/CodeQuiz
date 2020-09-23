@@ -1,5 +1,7 @@
 # CodeQuiz
 
+https://dthorpe13.github.io/CodeQuiz/
+
 In this activity, you will find that the user will find themselves at a start screen. On the screen the user is given instructions for the Code Quiz Challenge. Below the instructions is a start button to initiate the quiz.
 
 
